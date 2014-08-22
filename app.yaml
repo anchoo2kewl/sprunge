@@ -1,8 +1,7 @@
-application: sprunge-hrd
-version: 2
-runtime: python27
+application: dbinpaste
+version: 1
+runtime: python
 api_version: 1
-threadsafe: true
 
 handlers:
 - url: /favicon.ico
@@ -15,4 +14,4 @@ handlers:
   static_files: static/glipper-sprunge.txt
   upload: static/glipper-sprunge.txt
 - url: /.*
-  script: sprunge.app
+  script: sprunge.py
